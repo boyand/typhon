@@ -13,7 +13,7 @@ type Client interface {
 	CustomReq(req Request) (Response, error)
 }
 
-var defaultTimeout time.Duration = 1 * time.Second
+var defaultTimeout time.Duration = 2 * time.Second
 
 var DefaultClient Client = NewRabbitClient()
 
